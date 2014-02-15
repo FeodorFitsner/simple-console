@@ -56,8 +56,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
 	<Target Name="BeforeBuild">
 		<Message Importance="high" Text="YML VARIABLE1: $(VARIABLE1)" />
 		<Message Importance="high" Text="YML VARIABLE2: $(VARIABLE2)" />
@@ -65,5 +63,4 @@
 	</Target>
   <Target Name="AfterBuild">
   </Target>
-  -->
 </Project>
