@@ -2,7 +2,7 @@ environment:
   variable1: also defined in YAML
   VARIABLE3: defined in YAML
   
-build_script:
-  - ps: .\build.cmd
-  
+#build_script:
+#  - ps: .\build.cmd
+#  
 test: off
