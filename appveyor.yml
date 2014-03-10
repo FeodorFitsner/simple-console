@@ -1,3 +1,6 @@
+init:
+  - echo Hi, this is init phase!
+
 environment:
   variable1: also defined in YAML
   VARIABLE3: defined in YAML
