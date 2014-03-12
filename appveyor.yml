@@ -1,5 +1,4 @@
 init:
-  - git config --global core.autocrlf input
 
 environment:
   variable1: also defined in YAML
