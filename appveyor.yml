@@ -9,3 +9,7 @@ environment:
 #  - ps: .\build.cmd
 #  
 test: off
+branches:
+  except:
+    - gh-pages
+    - release
