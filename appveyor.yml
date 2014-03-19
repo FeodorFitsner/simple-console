@@ -1,6 +1,8 @@
 init:
     echo test!
 
+-
+
 environment:
   variable1: also defined in YAML
   VARIABLE3: defined in YAML
