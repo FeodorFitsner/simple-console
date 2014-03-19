@@ -10,6 +10,7 @@ namespace SimpleConsole
     {
         static void Main(string[] args)
         {
+            22
         }
     }
 }
