@@ -8,7 +8,10 @@ environment:
 #build_script:
 #  - ps: .\build.cmd
 #  
-test: off
+test:
+  assemblies:
+    - SimpleConsole.Tests.dll
+
 branches:
   except:
     - gh-pages
