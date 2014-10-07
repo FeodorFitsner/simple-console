@@ -21,6 +21,8 @@ after_build:
   - ps: $env:Console_Test_Machine
   - echo '%TestVar%'
   - ps: $env:TestVar
+  - build.cmd
+  - echo %script_var%
 
 branches:
   except:
