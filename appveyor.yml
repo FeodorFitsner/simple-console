@@ -19,7 +19,7 @@ after_build:
   - SimpleConsole\bin\debug\SimpleConsole.exe
   - ps: $env:Console_Test_Process
   - ps: $env:Console_Test_Machine
-  - '%TestVar%'
+  - echo '%TestVar%'
   - $env:TestVar
 
 branches:
