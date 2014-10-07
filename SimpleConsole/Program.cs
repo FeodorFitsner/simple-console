@@ -10,6 +10,8 @@ namespace SimpleConsole
     {
         static void Main(string[] args)
         {
+            Environment.SetEnvironmentVariable("Console_Test_Process", "Hello, process!");
+            Environment.SetEnvironmentVariable("Console_Test_Machine", "Hello, machine!", EnvironmentVariableTarget.Machine);
         }
     }
 }
