@@ -29,3 +29,6 @@ branches:
 
 #artifacts:
 #  - path: SimpleConsole
+
+cache:
+  - packages
