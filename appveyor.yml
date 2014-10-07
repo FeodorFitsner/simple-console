@@ -6,6 +6,7 @@ init:
 environment:
   variable1: also defined in YAML
   VARIABLE3: defined in YAML
+  Testvar: Hi, there!
   
 #build_script:
 #  - ps: .\build.cmd
