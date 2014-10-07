@@ -20,7 +20,7 @@ after_build:
   - ps: $env:Console_Test_Process
   - ps: $env:Console_Test_Machine
   - echo '%TestVar%'
-  - $env:TestVar
+  - ps: $env:TestVar
 
 branches:
   except:
