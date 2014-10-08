@@ -1,7 +1,5 @@
 version: "{build}"
 
-os: test
-
 init:
     echo test!
 
