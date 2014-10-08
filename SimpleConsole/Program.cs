@@ -25,7 +25,7 @@ namespace SimpleConsole
                 wc.Headers["Accept"] = "application/json";
                 wc.Headers["Content-type"] = "application/json";
 
-                var body = String.Format("{ \"name\": \"{0}\", \"value\": \"{1}\" }", name, value);
+                var body = String.Format("{{ \"name\": \"{0}\", \"value\": \"{1}\" }}", name, value);
                 wc.UploadData("api/build/variables", "POST", Encoding.UTF8.GetBytes(body));
             }
         }
