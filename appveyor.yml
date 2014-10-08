@@ -1,36 +1,12 @@
 version: "{build}"
 
-init:
-    echo test!
-
-environment:
-  variable1: also defined in YAML
-  VARIABLE3: defined in YAML
-  Testvar: Hi, there!
+os: test
   
-install:
-  - ps: $env:APPVEYOR_BUILD_VERSION
-  - ps: $env:APPVEYOR_API_URL
-  - ps: Set-AppveyorBuildVariable 'DynVar1' 'dynamic var value1'
-  - appveyor SetVariable -Name DynVar2 -value "dynamic var value 2222"
-  - echo %DynVar1%
+build_script:
+  - ps: .\build.ps1
+  - echo This variable is also available to the next command: %MY_DYNAMIC_VAR%
   
-#build_script:
-#  - ps: .\build.cmd
-#  
 test: off
-#  assemblies:
-#    - SimpleConsole.Tests.dll
-
-after_build:
-  - SimpleConsole\bin\debug\SimpleConsole.exe
-  - ps: $env:Console_Test_Process
-  - ps: $env:Console_Test_Machine
-  - echo '%TestVar%'
-  - ps: $env:TestVar
-  - build.cmd
-  - echo %script_var%
-  - ps: $env:DynVar2
 
 branches:
   except:
