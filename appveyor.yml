@@ -4,7 +4,8 @@ os: test
   
 after_build:
   - ps: .\build.ps1
-  - 'echo This variable is also available to the next command: %MY_DYNAMIC_VAR%'
+  - 'echo GitVersion_Version: %GitVersion_Version%'
+  - 'echo GitVersion_Branch: %GitVersion_Branch%'
   
 test: off
 
