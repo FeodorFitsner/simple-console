@@ -3,8 +3,8 @@ version: "{build}"
 os: test
   
 build_script:
-  - ps: '.\build.ps1'
-  - echo This variable is also available to the next command: %MY_DYNAMIC_VAR%
+  - ps: .\build.ps1
+  - 'echo This variable is also available to the next command: %MY_DYNAMIC_VAR%'
   
 test: off
 
