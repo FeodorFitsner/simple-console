@@ -11,7 +11,7 @@ environment:
 install:
   - ps: $env:APPVEYOR_BUILD_VERSION
   - ps: $env:APPVEYOR_API_URL
-  - ps: Set-AppveyorBuildVariable 'DynVar1', 'dynamic var value1'
+  - ps: Set-AppveyorBuildVariable 'DynVar1' 'dynamic var value1'
   - appveyor SerVariable DynVar2 "dynamic var value 2222"
   - echo %DynVar1%
   
