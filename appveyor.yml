@@ -1,7 +1,5 @@
 version: "{build}"
 
-os: test
-  
 after_build:
   - ps: .\build.ps1
   - 'echo GitVersion_Version: %GitVersion_Version%'
@@ -17,5 +15,5 @@ branches:
 #artifacts:
 #  - path: SimpleConsole
 
-cache:
-  - packages
+#cache:
+#  - packages
