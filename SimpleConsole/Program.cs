@@ -19,6 +19,7 @@ namespace SimpleConsole
 
         private static void SetBuildVariable(string name, string value)
         {
+            var a = 1;
              using(WebClient wc = new WebClient())
             {
                 wc.BaseAddress = Environment.GetEnvironmentVariable("APPVEYOR_API_URL");
