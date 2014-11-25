@@ -4,6 +4,7 @@ after_build:
   - ps: .\build.ps1
   - 'echo GitVersion_Version: %GitVersion_Version%'
   - 'echo GitVersion_Branch: %GitVersion_Branch%'
+  - ps: Add-AppveyorMessage 'Hello, there!'
   
 test: off
 
