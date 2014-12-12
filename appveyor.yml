@@ -6,8 +6,6 @@ after_build:
   - 'echo GitVersion_Branch: %GitVersion_Branch%'
   - ps: import-module build-worker-api
   - ps: Add-AppveyorMessage 'Hello, there!'
-  
-test: off
 
 branches:
   except:
