@@ -3,3 +3,5 @@
 
 # variables are immediately available in the same script
 $env:GitVersion_Version
+
+# another line
