@@ -3,4 +3,3 @@
 
 # variables are immediately available in the same script
 $env:GitVersion_Version
-$env:GitVersion_Branch
