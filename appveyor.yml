@@ -1,18 +1,6 @@
-version: "{build}"
+environment:
+  PRIVATEKEY:
+    secure: yepylRuJE72mFbnTGcEf0w==
 
-after_build:
-  - ps: .\build.ps1
-  - 'echo GitVersion_Version: %GitVersion_Version%'
-  - 'echo GitVersion_Branch: %GitVersion_Branch%'
-  - ps: import-module build-worker-api
-
-branches:
-  except:
-    - gh-pages
-    - release
-
-#artifacts:
-#  - path: SimpleConsole
-
-#cache:
-#  - packages
+build_script:
+  - echo %PRIVATEKEY%
