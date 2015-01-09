@@ -1,6 +1,1 @@
-environment:
-  PRIVATEKEY:
-    secure: yepylRuJE72mFbnTGcEf0w==
 
-build_script:
-  - echo %PRIVATEKEY%
