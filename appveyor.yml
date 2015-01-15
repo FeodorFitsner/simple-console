@@ -1,4 +1,4 @@
 environment:
-  configuration: release1
+  configuration: release
 
 test: off
