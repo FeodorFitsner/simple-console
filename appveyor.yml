@@ -1,2 +1,4 @@
-configuration: debug
+environment:
+  configuration: release
+
 test: off
