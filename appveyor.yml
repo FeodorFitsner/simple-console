@@ -2,3 +2,5 @@ environment:
   configuration: release
 
 test: off
+
+deploy: off
