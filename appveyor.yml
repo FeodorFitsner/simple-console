@@ -10,7 +10,7 @@ matrix:
 build_script:
   - dir c:\
 
-aaa: d
+aaa: ddd
 
 test: off
 deploy: off
