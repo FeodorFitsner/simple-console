@@ -1,6 +1,14 @@
 environment:
-  configuration: release
+  matrix:
+    - build: A
+    - build: B
+    - build: C
+
+matrix:
+  fast_finish: true
+
+build_script:
+  - dir c:\
 
 test: off
-
 deploy: off
