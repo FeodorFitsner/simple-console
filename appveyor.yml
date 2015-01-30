@@ -1,3 +1,6 @@
+install:
+  - git clone https://git.chromium.org/external/gyp.git/
+
 build_script:
   - echo %APPVEYOR_REPO_BRANCH%
   - echo %APPVEYOR_REPO_TAG%
