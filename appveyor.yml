@@ -1,14 +1,7 @@
-environment:
-  matrix:
-    - build: A
-    - build: B
-    - build: C
-
-matrix:
-  fast_finish: true
-
 build_script:
-  - dir c:\
+  - echo %APPVEYOR_REPO_BRANCH%
+  - echo %APPVEYOR_REPO_TAG%
+  - echo %APPVEYOR_REPO_TAG_NAME%
 
 test: off
 deploy: off
