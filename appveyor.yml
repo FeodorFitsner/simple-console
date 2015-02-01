@@ -1,10 +1,6 @@
 install:
-  - git clone https://git.chromium.org/external/gyp.git/
+  - choco install silverlight4sdk
 
-build_script:
-  - echo %APPVEYOR_REPO_BRANCH%
-  - echo %APPVEYOR_REPO_TAG%
-  - echo %APPVEYOR_REPO_TAG_NAME%
-
+build: off
 test: off
 deploy: off
