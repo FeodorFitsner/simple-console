@@ -1,4 +1,4 @@
-os: test
+#os: test
 
 install:
   - ps: Install-Product node 1
