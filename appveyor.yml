@@ -3,6 +3,7 @@
 install:
   - ps: Install-Product node 1
   - node --version
+  - ps: Start-sleep -s 5
   - ps: Install-Product node 0.10
   - node --version
 
