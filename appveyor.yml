@@ -1,5 +1,10 @@
+os: test
+
 install:
-  - choco install silverlight4sdk
+  - ps: Install-Product node 1
+  - node --version
+  - ps: Install-Product node 0.10
+  - node --version
 
 build: off
 test: off
