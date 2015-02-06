@@ -1,6 +1,7 @@
 #os: test
 
 install:
+  - perl --version
   - ps: Install-Product node 1
   - node --version
   - ps: Start-sleep -s 5
