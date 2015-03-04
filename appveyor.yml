@@ -1,10 +1,10 @@
-#os: test
+build:
+- 7z a myapp.zip SimpleConsole\*.*
 
 artifacts:
-- path: README.md
+- path: myapp.zip
   type: WebDeployPackage
-  name: test1
+  name: test123
 
-build: off
 test: off
 deploy: off
