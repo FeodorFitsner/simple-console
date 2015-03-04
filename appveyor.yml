@@ -1,4 +1,4 @@
-build:
+build_script:
 - 7z a myapp.zip SimpleConsole\*.*
 
 artifacts:
