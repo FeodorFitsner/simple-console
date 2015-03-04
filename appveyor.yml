@@ -1,3 +1,6 @@
+cache:
+  - packages -> **\packages.config
+
 install:
   - nuget restore
 
