@@ -1,13 +1,5 @@
-#os: test
-
 install:
-  - perl --version
-  - ps: Install-Product node 1
-  - node --version
-  - ps: Start-sleep -s 5
-  - ps: Install-Product node 0.10
-  - node --version
+  - nuget restore
 
-build: off
 test: off
 deploy: off
