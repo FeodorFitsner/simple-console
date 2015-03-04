@@ -1,5 +1,5 @@
 cache:
-  - packages -> **\packages.config
+  - packages -> SimpleConsole\packages.config;SimpleConsole.Tests\packages.config
 
 install:
   - nuget restore
