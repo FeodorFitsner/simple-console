@@ -1,12 +1,9 @@
 #os: test
 
-install:
-  - perl --version
-  - ps: Install-Product node 1
-  - node --version
-  - ps: Start-sleep -s 5
-  - ps: Install-Product node 0.10
-  - node --version
+artifacts:
+- path: README.md
+  type: WebDeployPackage
+  name: test1
 
 build: off
 test: off
