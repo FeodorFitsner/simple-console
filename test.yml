@@ -1,0 +1,13 @@
+build_script:
+- echo Hello from test.yml
+- 7z a myapp.zip SimpleConsole\*.*
+
+artifacts:
+- path: myapp.zip
+  type: WebDeployPackage
+  name: test123
+
+test: off
+deploy: off
+
+# small change
