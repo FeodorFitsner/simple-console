@@ -1,3 +1,4 @@
+os: unstable
 build_script:
 - 7z a myapp.zip SimpleConsole\*.*
 - ps: Install-Product node 1
