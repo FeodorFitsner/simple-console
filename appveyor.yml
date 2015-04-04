@@ -3,7 +3,9 @@ os: test
 install:
   - set TEST_VAR=Hello, world!
   - echo before reboot
-  - ps: Restart-Computer
+  - shutdown /r
+  - ps: Start-Sleep -s 5
+  #- ps: Get-Process -Name 'Appveyor.BuildAgent.Service' -ErrorAction SilentlyContinue | Stop-Process -Force
 
 build_script:
   - echo after reboot
