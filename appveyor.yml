@@ -3,13 +3,13 @@ os: test
 install:
   - set TEST_VAR=Hello, world!
   - echo before reboot
-  - shutdown /r
-  - ps: Start-Sleep -s 5
+  - ps: Restart-Computer
+  - ps: Start-Sleep -s 10
   #- ps: Get-Process -Name 'Appveyor.BuildAgent.Service' -ErrorAction SilentlyContinue | Stop-Process -Force
 
 build_script:
   - echo after reboot
-  - echo TEST_VAR
+  - echo %TEST_VAR%
 
 test: off
 deploy: off
