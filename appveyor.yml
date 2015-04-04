@@ -1,6 +1,7 @@
 os: test
 
 install:
+  - ps: Start-Sleep -s 180
   - set TEST_VAR=Hello, world!
   - echo before reboot
   - ps: Restart-Computer
