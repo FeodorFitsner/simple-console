@@ -1,16 +1,13 @@
-#os: unstable
-build_script:
-- 7z a myapp.zip SimpleConsole\*.*
-- ps: Install-Product node 1
-- node --version
-- dir "C:\Program Files"
+os: test
 
-artifacts:
-- path: myapp.zip
-  type: WebDeployPackage
-  name: test123
+install:
+  - set TEST_VAR=Hello, world!
+  - echo before reboot
+  - ps: Restart-Computer
+
+build_script:
+  - echo after reboot
+  - echo TEST_VAR
 
 test: off
 deploy: off
-
-# small change
