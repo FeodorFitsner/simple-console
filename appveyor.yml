@@ -4,7 +4,7 @@ install:
   - ps: Start-Sleep -s 180
   - set TEST_VAR=Hello, world!
   - echo before reboot
-  - ps: Restart-Computer
+  - ps: Restart-Computer -Force
   - ps: Start-Sleep -s 10
   #- ps: Get-Process -Name 'Appveyor.BuildAgent.Service' -ErrorAction SilentlyContinue | Stop-Process -Force
 
