@@ -4,6 +4,7 @@ install:
   #- ps: Start-Sleep -s 180
   - set TEST_VAR=Hello, world!
   - echo before reboot
+  - ps: Set-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" -Name "FilterAdministratorToken" -Value 1
   - ps: Restart-Computer -Force
   - ps: Start-Sleep -s 10
 
