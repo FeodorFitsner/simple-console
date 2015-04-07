@@ -1,4 +1,4 @@
-os: default azure
+#os: default azure
 
 install:
   #- ps: Start-Sleep -s 180
