@@ -1,9 +1,6 @@
 #os: unstable
 build_script:
 - 7z a myapp.zip SimpleConsole\*.*
-- ps: Install-Product node 1
-- node --version
-- dir "C:\Program Files"
 
 artifacts:
 - path: myapp.zip
