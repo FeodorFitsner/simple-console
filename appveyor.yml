@@ -1,11 +1,11 @@
 #os: unstable
-build_script:
-- 7z a myapp.zip SimpleConsole\*.*
+#build_script:
+#- 7z a myapp.zip SimpleConsole\*.*
 
-artifacts:
-- path: myapp.zip
-  type: WebDeployPackage
-  name: test123
+#artifacts:
+#- path: myapp.zip
+#  type: WebDeployPackage
+#  name: test123
 
 test: off
 deploy: off
