@@ -1,1 +1,1 @@
-ECHO This is my custom build script
+ECHO This is my custom build script - test
