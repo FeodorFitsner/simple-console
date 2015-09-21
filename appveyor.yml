@@ -1,6 +1,7 @@
-#os: unstable
-#build_script:
-#- 7z a myapp.zip SimpleConsole\*.*
+os: Visual Studio 2015
+
+build_script:
+- where msbuild.exe
 
 #artifacts:
 #- path: myapp.zip
@@ -9,11 +10,3 @@
 
 test: off
 deploy: off
-
-notifications:
-- provider: Slack
-  incoming_webhook: https://hooks.slack.com/services/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11
-  auth_token: ''
-  on_build_success: false
-  on_build_failure: false
-  on_build_status_changed: true 
