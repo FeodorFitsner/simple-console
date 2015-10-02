@@ -1,7 +1,12 @@
-os: Visual Studio 2015
+#os: Visual Studio 2015
+
+environment:
+  secret_var:
+    secure: /LqjEnMSfmWPx+VR6AhR4A==
 
 build_script:
-- where msbuild.exe
+#- where msbuild.exe
+- echo %secret_var%
 
 test: off
 deploy: off
