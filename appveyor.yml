@@ -5,7 +5,7 @@ environment:
     secure: /LqjEnMSfmWPx+VR6AhR4A==
 
 before_build:
-  -cmd: echo before build
+  - cmd: echo before build
 
 #build_script:
 #- where msbuild.exe
