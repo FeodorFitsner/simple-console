@@ -4,9 +4,12 @@ environment:
   secret_var:
     secure: /LqjEnMSfmWPx+VR6AhR4A==
 
-build_script:
+before_build:
+-cmd: echo before build
+
+#build_script:
 #- where msbuild.exe
-- echo %secret_var%
+#- echo %secret_var%
 
 test: off
 deploy: off
