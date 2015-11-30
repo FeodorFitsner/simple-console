@@ -12,7 +12,7 @@ namespace SocketTest
     {
         static void Main(string[] args)
         {
-            for (int i = 0; i < 10; ++i)
+            for (int i = 0; i < 1000; ++i)
             {
                 const AddressFamily family = AddressFamily.InterNetwork;
                 const SocketType socket = SocketType.Stream;
