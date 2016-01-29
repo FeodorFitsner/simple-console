@@ -13,8 +13,8 @@ namespace SimpleConsole
         {
             Console.WriteLine("Setting variables using build worker API");
 
-            SetBuildVariable("GitVersion_Version", "1.0");
-            SetBuildVariable("GitVersion_Branch", "master");
+            //SetBuildVariable("GitVersion_Version", "1.0");
+            //SetBuildVariable("GitVersion_Branch", "master");
         }
 
         private static void SetBuildVariable(string name, string value)
