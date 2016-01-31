@@ -1,8 +1,21 @@
-environment:
-  configuration: release
+install:
+- appveyor DownloadFile https://raw.githubusercontent.com/appveyor/ci/master/scripts/nuget-restore.cmd
+- nuget-restore
+
+artifacts:
+- path: SimpleConsole\bin\Debug
+  name: debug-bin
 
 test: off
 
-deploy: off
-
-# ch
+deploy:
+- provider: BinTray
+  username: feodorfitsner
+  api_key:
+    secure: SuzrAhkqrKNUjzRGc6oK1u126nd/9f5WRb2lqIm/6XHS37O5AtyruqJbqReBlfKE
+  subject: feodorfitsner
+  repo: my-all-files
+  package: simple-console
+  publish: true
+  override: true
+  explode: true
