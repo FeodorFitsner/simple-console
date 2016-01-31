@@ -8,7 +8,7 @@ test: off
 deploy:
 - provider: AzureWebJob
   website: aspnet-webdeploy-bad
-  username: aspnet-webdeploy-bad
+  username: $aspnet-webdeploy-bad
   password:
     secure: iM1VAstTm7iOtnDkmIOanIZgM1lx8vx/TqEAORKcNfdUbA5mgklUsPyW0hGPjn52uxbz7zbljacjdyVU0q/iLA==
   artifact: debug-bin
