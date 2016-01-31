@@ -15,5 +15,5 @@ deploy:
   password:
     secure: iM1VAstTm7iOtnDkmIOanIZgM1lx8vx/TqEAORKcNfdUbA5mgklUsPyW0hGPjn52uxbz7zbljacjdyVU0q/iLA==
   artifact: debug-bin
-  job_name: job-3
-  job_schedule: '* 0 * * * *'
+  job_name: job-4
+  #job_schedule: '* 0 * * * *'
