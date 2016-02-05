@@ -9,14 +9,14 @@ namespace SimpleConsole
 {
     class Program
     {
-        static void Main(string[] args)
+        static int Main(string[] args)
         {
             //Console.WriteLine("Setting variables using build worker API");
 
             //SetBuildVariable("GitVersion_Version", "1.0");
             //SetBuildVariable("GitVersion_Branch", "master");
             
-            if(args.length == 0) {
+            if(args.Length == 0) {
                 Console.WriteLine("wrong number of arguments");
             } else {
                 return Int32.Parse(args[0]);
