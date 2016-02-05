@@ -1,7 +1,7 @@
 #os: Visual Studio 2015
 
 after_build:
-- SimpleConsole\bin\debug\SimpleConsole.exe -2 || IF %ERRORLEVEL% NEQ -1073741819 ECHO "Original exit code was %ERRORLEVEL%" && EXIT /B 1
+- SimpleConsole\bin\debug\SimpleConsole.exe -2 || ECHO "Original exit code was %ERRORLEVEL%" && EXIT /B 1
 
 test: off
 deploy: off
