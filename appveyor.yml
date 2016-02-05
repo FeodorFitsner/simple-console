@@ -1,25 +1,7 @@
 #os: Visual Studio 2015
 
-environment:
-  secret_var:
-    secure: /LqjEnMSfmWPx+VR6AhR4A==
-
-before_build:
-  - cmd: echo before build
-
-#build_script:
-#- where msbuild.exe
-#- echo %secret_var%
+after_build:
+- SimpleConsole\bin\debug\SimpleConsole.exe -2
 
 test: off
 deploy: off
-
-# build 5
-
-notifications:
-- provider: Slack
-  incoming_webhook:
-    secure: Z5l4gvjCOVmjcNiX/WsO+LrwqbbG6T3AGGs1AJJtEBUBqf7VvLFwuefj8CY+OTir4ox41SWP19JWf3AbH2Cfsnr1H/gyoZXTWMkRlJRQ7Tg=
-  on_build_success: true
-  on_build_failure: true
-  on_build_status_changed: false
