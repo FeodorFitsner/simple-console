@@ -11,10 +11,16 @@ namespace SimpleConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Setting variables using build worker API");
+            //Console.WriteLine("Setting variables using build worker API");
 
             //SetBuildVariable("GitVersion_Version", "1.0");
             //SetBuildVariable("GitVersion_Branch", "master");
+            
+            if(args.length == 0) {
+                Console.WriteLine("wrong number of arguments");
+            } else {
+                return Int32.Parse(args[0]);
+            }
         }
 
         private static void SetBuildVariable(string name, string value)
