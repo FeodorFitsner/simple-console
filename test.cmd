@@ -4,7 +4,7 @@ IF %LASTERROR% NEQ 0 (
   IF %LASTERROR% NEQ -1073741819 EXIT /B %LASTERROR%
 )
 
-SimpleConsole\bin\debug\SimpleConsole.exe 0
+SimpleConsole\bin\debug\SimpleConsole.exe 3
 set LASTERROR=%ERRORLEVEL%
 IF %LASTERROR% NEQ 0 (
   IF %LASTERROR% NEQ -1073741819 EXIT /B %LASTERROR%
