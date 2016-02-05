@@ -18,6 +18,7 @@ namespace SimpleConsole
             
             if(args.Length == 0) {
                 Console.WriteLine("wrong number of arguments");
+                return 1;
             } else {
                 return Int32.Parse(args[0]);
             }
