@@ -1,7 +1,7 @@
-#os: Visual Studio 2015
+os: test
 
 after_build:
-- test.cmd
+- SimpleConsole\bin\debug\SimpleConsole.exe
 
 test: off
 deploy: off
