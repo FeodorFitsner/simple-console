@@ -1,4 +1,4 @@
-os: test
+os: Default Azure
 
 after_build:
 - SimpleConsole\bin\debug\SimpleConsole.exe
