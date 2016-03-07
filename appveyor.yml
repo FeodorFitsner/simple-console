@@ -1,4 +1,4 @@
-image: Unstable
+#image: Unstable
 
 after_build:
 - SimpleConsole\bin\debug\SimpleConsole.exe
