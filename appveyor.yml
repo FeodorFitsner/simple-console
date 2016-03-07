@@ -1,4 +1,4 @@
-os: Default Azure
+image: Unstable
 
 after_build:
 - SimpleConsole\bin\debug\SimpleConsole.exe
