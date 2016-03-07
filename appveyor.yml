@@ -1,4 +1,4 @@
-#image: Unstable
+image: Visual Studio 2015 RC
 
 after_build:
 - SimpleConsole\bin\debug\SimpleConsole.exe
