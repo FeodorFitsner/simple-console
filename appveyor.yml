@@ -5,5 +5,5 @@ after_build:
 - SimpleConsole\bin\debug\SimpleConsole.exe
 
 test: off
-
+#
 deploy: off
