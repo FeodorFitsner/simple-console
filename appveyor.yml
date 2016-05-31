@@ -1,8 +1,10 @@
 skip_commits:
  message: /^((?!build).)*$/
-
 after_build:
 - SimpleConsole\bin\debug\SimpleConsole.exe
+
+build:
+  parallel: true
 
 test: off
 #
