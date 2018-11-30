@@ -18,8 +18,8 @@ environment:
   - a: 13
   - a: 14
   - a: 15
-matrix:
-  fast_finish: true
+#matrix:
+#  fast_finish: true
 
 build: off
 test_script:
