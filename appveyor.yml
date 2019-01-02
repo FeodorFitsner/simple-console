@@ -1,14 +1,14 @@
 version: 1.0.{build}
 configuration: Debug
-max_jobs: 1
+max_jobs: 5
 environment:
   appveyor_build_worker_cloud: proc
   matrix:
   - a: 1
   - a: 2
-#  - a: 3
-#  - a: 4
-#  - a: 5
+  - a: 3
+  - a: 4
+  - a: 5
 #  - a: 6
 #  - a: 7
 #  - a: 8
