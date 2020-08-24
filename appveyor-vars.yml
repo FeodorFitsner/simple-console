@@ -5,10 +5,10 @@ environment:
   matrix:
 
   - job_name: test
-    BASE_URL: %TEST_CLOUD_BASE_URL%
+    BASE_URL: '%TEST_CLOUD_BASE_URL%'
 
   - job_name: prod
-    BASE_URL: %PROD_CLOUD_BASE_URL%
+    BASE_URL: '%PROD_CLOUD_BASE_URL%'
  
  build: off
  
