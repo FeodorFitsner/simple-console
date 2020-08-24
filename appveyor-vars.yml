@@ -10,7 +10,7 @@ environment:
   - job_name: prod
     BASE_URL: '%PROD_CLOUD_BASE_URL%'
  
- build: off
+build: off
  
- test_script:
- - echo %BASE_URL%
+test_script:
+- echo %BASE_URL%
