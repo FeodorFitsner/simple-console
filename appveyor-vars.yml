@@ -1,0 +1,16 @@
+environment:
+  TEST_CLOUD_BASE_URL: http://test_cloud_url
+  PROD_CLOUD_BASE_URL: http://prod_cloud_url
+  
+  matrix:
+
+  - job_name: test
+    BASE_URL: %TEST_CLOUD_BASE_URL%
+
+  - job_name: prod
+    BASE_URL: %PROD_CLOUD_BASE_URL%
+ 
+ build: off
+ 
+ test_script:
+ - echo %BASE_URL%
