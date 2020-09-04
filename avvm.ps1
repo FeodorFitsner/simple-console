@@ -251,7 +251,6 @@ function Install-Product {
     # determine platform if not specified
     if (-not $Platform) {
         $maxVersion = Get-MaxVersion $Product $Version
-        Write-Host "Max version: $maxVersion"
         if ((Parse-Version $maxVersion).major -ge 14) {
             # Set Node 14.x to x64 because of bug: https://github.com/appveyor/ci/issues/3407#issuecomment-680316850
             $Platform = 'x64'
