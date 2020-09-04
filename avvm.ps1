@@ -249,7 +249,7 @@ function Install-Product {
     }
 
     # determine platform if not specified
-    if ($Platform -eq $null) {
+    if (-not $Platform) {
         $maxVersion = Get-MaxVersion $Product $Version
         Write-Host "Max version: $maxVersion"
         if ((Parse-Version $maxVersion).major -ge 14) {
