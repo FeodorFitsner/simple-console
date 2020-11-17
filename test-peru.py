@@ -1,3 +1,5 @@
+import sys
+
 if sys.stdout.encoding == 'ANSI_X3.4-1968':
     sys.stdout = open(
         sys.stdout.fileno(), mode='w', encoding='utf8', buffering=1)
