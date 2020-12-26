@@ -3,7 +3,7 @@ try {
     throw "Hello!"
 }
 catch [exception]{
-    Write-Host "Exception occured!"
+    Write-Host "Exception: " $_.exception.message
     throw
 }
 
