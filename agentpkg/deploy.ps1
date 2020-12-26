@@ -1,3 +1,4 @@
+$ErrorActionPreference = 'continue'
 
 try {
     throw "Hello!"
