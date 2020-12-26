@@ -1,7 +1,5 @@
-$ErrorActionPreference = 'continue'
-
 try {
-    throw "Hello!"
+    throw
 }
 catch [exception]{
     Write-Host "Exception: " $_.exception.message
