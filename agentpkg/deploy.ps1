@@ -6,4 +6,6 @@ catch [exception]{
     throw
 }
 
+dir
+
 Write-Host "Some final message!"
