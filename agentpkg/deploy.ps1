@@ -1,3 +1,5 @@
+$PSVersionTable
+
 try {
     throw
 }
