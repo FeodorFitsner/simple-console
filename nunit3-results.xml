@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="2" result="Failed" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="2" engine-version="3.4.1.0" clr-version="4.0.30319.42000" start-time="2016-09-20 20:29:57Z" end-time="2016-09-20 20:29:57Z" duration="0.147215">
+  <command-line><![CDATA[nunit3-console.exe  "C:\Projects\UnitTestProjects\NUnit3TestProject\bin\Debug\NUnit3TestProject.dll"]]></command-line>
+  <test-suite type="Assembly" id="0-1003" name="NUnit3TestProject.dll" fullname="C:\Projects\UnitTestProjects\NUnit3TestProject\bin\Debug\NUnit3TestProject.dll" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2016-09-20 20:29:57Z" end-time="2016-09-20 20:29:57Z" duration="0.098144" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="2">
+    <environment framework-version="3.4.1.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.14393.0" platform="Win32NT" cwd="C:\Projects\UnitTestProjects\packages\NUnit.ConsoleRunner.3.4.1\tools" machine-name="DESKTOP-G1TV4KA" user="ilyaf" user-domain="DESKTOP-G1TV4KA" culture="en-US" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="WorkDirectory" value="C:\Projects\UnitTestProjects\packages\NUnit.ConsoleRunner.3.4.1\tools" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.5.2" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="4" />
+    </settings>
+    <properties>
+      <property name="_PID" value="20444" />
+      <property name="_APPDOMAIN" value="test-domain-" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="0-1004" name="NUnit3TestProject" fullname="NUnit3TestProject" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2016-09-20 20:29:57Z" end-time="2016-09-20 20:29:57Z" duration="0.069777" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="2">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="0-1000" name="NUnitTest1" fullname="NUnit3TestProject.NUnitTest1" classname="NUnit3TestProject.NUnitTest1" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2016-09-20 20:29:57Z" end-time="2016-09-20 20:29:57Z" duration="0.063438" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="2">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="0-1001" name="Nunit3TestMethod1" fullname="NUnit3TestProject.NUnitTest1.Nunit3TestMethod1" methodname="Nunit3TestMethod1" classname="NUnit3TestProject.NUnitTest1" runstate="Runnable" seed="2036843859" result="Passed" start-time="2016-09-20 20:29:57Z" end-time="2016-09-20 20:29:57Z" duration="0.016237" asserts="1" />
+        <test-case id="0-1002" name="Nunit3TestMethod2" fullname="NUnit3TestProject.NUnitTest1.Nunit3TestMethod2" methodname="Nunit3TestMethod2" classname="NUnit3TestProject.NUnitTest1" runstate="Runnable" seed="866772798" result="Failed" start-time="2016-09-20 20:29:57Z" end-time="2016-09-20 20:29:57Z" duration="0.030249" asserts="1">
+          <failure>
+            <message><![CDATA[  Expected: 1
+  But was:  2
+]]></message>
+            <stack-trace><![CDATA[at NUnit3TestProject.NUnitTest1.Nunit3TestMethod2() in C:\Projects\UnitTestProjects\NUnit3TestProject\NUnitTest1.cs:line 18
+]]></stack-trace>
+          </failure>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
