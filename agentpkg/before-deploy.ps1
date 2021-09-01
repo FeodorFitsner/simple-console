@@ -1,1 +1,2 @@
-echo "I'm running before deploy!!!"
+﻿# Notify worker we're shutting down
+Write-Host "Pre Deploy Script Complete";
