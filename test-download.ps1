@@ -1,0 +1,1 @@
+Invoke-RestMethod -Method Get -Uri "https://ci.appveyor.com/api/buildjobs/pubck02xfr0syljn/artifacts/Widelands-Release-x64-~git(9838ae87cadfe299556a521479499e03d47ce9cd%40appveyor_fix).exe" -OutFile site~1.exe.exe -Headers @{ "Authorization" = "Bearer $env:APPVEYOR_TOKEN" }
