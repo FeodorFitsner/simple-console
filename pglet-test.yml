@@ -1,0 +1,8 @@
+image: ubuntu
+
+stack: python 3.7
+
+test_script:
+- pip3 install -i https://test.pypi.org/simple/ pglet==0.1.369
+
+build: off
