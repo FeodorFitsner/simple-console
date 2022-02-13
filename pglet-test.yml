@@ -1,4 +1,10 @@
-image: ubuntu
+image:
+- ubuntu1604
+- ubuntu1804
+- ubuntu2004
+- macos
+- macos-mojave
+- macos-bigsur
 
 stack: python 3.7
 
