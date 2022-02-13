@@ -5,10 +5,12 @@ image:
 - macos
 - macos-mojave
 - macos-bigsur
+- Visual Studio 2019
 
 stack: python 3.8
 
 test_script:
-- pip3 install -i https://test.pypi.org/simple/ pglet==0.1.369
+- sh: pip3 install -i https://test.pypi.org/simple/ pglet==0.1.369
+- cmd: C:\Python310-x64\Scripts\pip.exe install -i https://test.pypi.org/simple/ pglet==0.1.369
 
 build: off
