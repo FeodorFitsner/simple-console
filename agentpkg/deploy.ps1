@@ -1,3 +1,3 @@
 $PSVersionTable
 
-Write-Host "Some final message!"
+Write-Host "A final message!"
